@@ -58,7 +58,7 @@ header{
     justify-content: center;
     align-items: center;
     gap: 5vw;
-    margin: 3% 0;
+    margin: 3% 3%;
 }
 .image{
     display: grid;
@@ -70,4 +70,20 @@ header{
 }
 .text-contener>h3{
     font-size: 2em;
+}
+@media screen and (max-width:576px) {
+    .image{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .conteiner{
+        flex-direction: column;
+    }
+}
+@media screen and (min-width:577px) and (max-width:768px) {
+    .image{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .conteiner{
+        flex-direction: column;
+    }
 }
