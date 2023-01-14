@@ -3,9 +3,11 @@
     margin: 0;
     padding: 0;
 }
+
 header{
     background-color:#FF900E1A;
 }
+/* Nav bar styles */
 .navigation-bar{
     display: flex;
     justify-content: space-between;
@@ -21,6 +23,7 @@ header{
 }
 /* .manu>li>a{
 } */
+/* Banner styles */
 .banner{
     display: flex;
     flex-direction: column;
@@ -48,4 +51,23 @@ header{
 .banner>img{
     width: 80%;
     margin: 3% 0;
+}
+/* Second section styles */
+.conteiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    margin: 3% 0;
+}
+.image{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1vw;
+}
+.image>img{
+    width: 100%;
+}
+.text-contener>h3{
+    font-size: 2em;
 }
