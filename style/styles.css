@@ -14,7 +14,7 @@ header{
     padding: 5% 5%;
     align-items: center;
 }
-.fa-solid{
+.nav-icon{
     display: none;
 }
 .manu{
@@ -137,7 +137,12 @@ header{
     /* width: 10%; */
     padding: 3%;
     border-radius: 5%;
-} .box>p{
+}
+.box:hover{
+    transform: rotate(360deg);
+    transition: transform 1s;
+}
+ .box>p{
     font-size: 0.8em;
     color: #727272;
 }
@@ -162,8 +167,18 @@ header{
     margin: 5% 7%;
     padding: 1% 3%;
     background-color:#FF900E1A ;
- }   
-
+ }  
+ .footer-flex{
+    display: flex;
+    height: 50vh;
+    align-items: center;
+    justify-content: space-around;
+ }
+ .inline>p{
+    display: inline;
+ }
+/* mobile screen
+ */
 @media screen and (max-width:576px) {
     .conteiner{
         flex-direction: column;
@@ -190,7 +205,14 @@ header{
     .manu{
         display: none;
     }
-    .fa-solid{
-        display: flex;
+    .nav-icon{
+        display: block;
     }
+    .nav-icon:hover ul{
+        display: block;
+    }
+    .footer-flex{
+      flex-direction: column;
+     }
 }
+/* madium screen */
